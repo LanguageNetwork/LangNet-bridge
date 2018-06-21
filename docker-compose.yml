@@ -1,0 +1,11 @@
+version: '3'
+
+services:
+  langnet-bridge:
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    volumes:
+      - .:/app
+#    command: python main.py
+    command: echo 'start docker-compose'
